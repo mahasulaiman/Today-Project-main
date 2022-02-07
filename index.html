@@ -12,8 +12,7 @@
 
 <body>
 
-
-  <nav class="wrapper">
+  <div class="wrapper">
     <div class="top_nav">
       <div class="left">
         <div class="logo">
@@ -22,27 +21,80 @@
       </div>
 
       <div class="right">
-        <input class="form-control" type="search" placeholder="  Search.." aria-label="Search" size="50">
-        <button class="button-search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-        </svg> </button>
+        <form class="d-flex justify-content-center my-5">
+          <input id="news_search" type="text" class="form-control" placeholder="  Search.."
+            aria-label="Username" size="50">
+          <button type="button" id="btn-search" class="btn"><svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+        </form>
       </div>
     </div>
-    </div>
-    <div class="bottom_nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Covid-19</a></li>
-        <li><a href="#">General</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">Sport</a></li>
-        <li><a href="#">Technology</a></li>
-      </ul>
-    </div>
-  </nav>
+  </div>
+  <div class="nav-scroller py-1 mb-2">
+    <nav id="heading" class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" id="business">Business</a>
+      <a class="p-2 link-secondary" id="entertainment">Entertainment</a>
+      <a class="p-2 link-secondary" id="general">General</a>
+      <a class="p-2 link-secondary" id="health">Health</a>
+      <a class="p-2 link-secondary" id="science">Science</a>
+      <a class="p-2 link-secondary" id="sports">Sports</a>
+      <a class="p-2 link-secondary" id="technology">Technology</a>
+    </nav>
+  </div>
 
+  <div class="container mt-5">
+    <div id="mewsCard" class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex-colum position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Post title</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+          </div>
+        </div>
   
-  <script src="/script.js"></script>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex-colum position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Post title</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!-- <script src="/script.js"></script> -->
+  <script src="script.js"></script>
+  <script sre="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  Integrity="sha384-QJHtvGhmr9X0IpI6YVutG+2Q0K9T+ZnN4k2FN1RtK32EFEIsxhLmWl5/YESvp213"
+  crossorigin="anonymous"></script> 
 </body>
-
 </html>
