@@ -3,9 +3,6 @@ const newsApi = `https://newsapi.org/v2/everything?q=tesla&from=2022-01-07&sortB
         let headings = document.querySelectorAll("#headings a");
         for (let heading of headings) {
             heading.addEventListener("click", (event) => {
-                pageNum = 1;
-                prev.disabled = true;
-                next.disabled = false;
                 let category = event.target.id;
                 console.log(category);
                 categoryURL = `https://newsapi.org/v2/top-headlines?country=${category}&apiKey=cfef1bff4c5b4900818b96ec6f1d80e2`
