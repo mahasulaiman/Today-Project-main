@@ -41,5 +41,16 @@ display: flex;
 justify-content:space-between;
 align-items: center;
 }
-
+.container-weather {
+    height: 10rem;
+    width: 15rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 16px;
+    border: solid rgb(14, 43, 1);
+    color: #494949;
+letter-spacing: 2px;
+font-size: 20px;
+}
 
