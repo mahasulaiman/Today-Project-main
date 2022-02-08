@@ -41,7 +41,7 @@ display: flex;
 justify-content:space-between;
 align-items: center;
 }
-.container-weather {
+.weather {
     height: 10rem;
     width: 15rem;
     background-color: #f9f9f9;
@@ -52,5 +52,6 @@ align-items: center;
     color: #494949;
 letter-spacing: 2px;
 font-size: 20px;
+margin: 5px;
 }
 
