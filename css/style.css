@@ -42,8 +42,8 @@ justify-content:space-between;
 align-items: center;
 }
 .weather {
-    height: 10rem;
-    width: 15rem;
+    height: 15rem;
+    width: 20rem;
     background-color: #f9f9f9;
     text-align: center;
     padding-top: 12px;
